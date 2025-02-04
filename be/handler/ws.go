@@ -40,7 +40,6 @@ func HandleConnections(c *gin.Context) {
 	}
 }
 
-// Send updates to WebSocket clients
 func SendUpdates() {
 	for {
 		metric := <-broadcast
@@ -56,7 +55,6 @@ func SendUpdates() {
 	}
 }
 
-// Poll MySQL every 3 seconds for new data
 func PollDatabase() {
 	var lastTimestamp time.Time
 

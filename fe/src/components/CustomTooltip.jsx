@@ -13,7 +13,7 @@ const CustomTooltip = ({ active, payload }) => {
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)"
         }}
         >
-          <p><strong>Route:</strong>{route}</p>
+          <p><strong>Route:</strong> {route}</p>
           <p><strong>Method:</strong> {method}</p>
           <p><strong>Name:</strong> {status_code}</p>
           <p><strong>Response Time:</strong> {response_time} ms</p>

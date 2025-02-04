@@ -31,7 +31,7 @@ func main() {
 		fmt.Println(err)
 	}
 
-	// connection init package
+	// connection init
 	_, err = messageserver.UdpClient.Write(initMessage)
 	if err != nil {
 		fmt.Println("Error sending data:", err)
@@ -58,7 +58,6 @@ func main() {
 		}
 	}()
 
-	// Continuous reading loop
 	go func() {
 		for {
 			receivedMessage := make([]byte, 1024)

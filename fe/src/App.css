@@ -1,0 +1,19 @@
+.App{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.navbar{
+    background: #f2f2f2;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+
+.chart{
+    margin: auto;
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
